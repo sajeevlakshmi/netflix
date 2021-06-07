@@ -4,7 +4,7 @@ import axios from '../../axios'
 
 import { API_KEY,imageUrl} from '../../constants/constants'
 
-const leftLinks = ['Home', 'TV Shows', 'Movies', 'Latest', 'My List']
+
 function Banner() {
     const [movie, setMovie] = useState()
     useEffect(() => {
