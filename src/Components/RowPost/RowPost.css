@@ -1,6 +1,11 @@
 .row{
-    margin-left: 20px;
+    padding-top: 20px;
+    margin-left: 25px;
     color: #fff;
+}
+.row-title{
+    margin-left: 25px;
+    color: #fff;   
 }
 
 .posters{
@@ -31,4 +36,10 @@
 }
 .smallposter:hover{
     transform: scale(1.09);
+}
+.show-movie-name{
+    text-align: center;
+}
+.hide-movie{
+    display: none;
 }

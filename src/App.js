@@ -1,18 +1,32 @@
 
 import React from 'react'
-import NavBar from './Components/NavBar/NavBar'
-import './App.css';
-import {originals,action,comedy} from './urls'
-import Banner from './Components/Banner/Banner'
-import RowPost from './Components/RowPost/RowPost'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Homescreen from './Homescreen';
+import Login from './Components/Login/Login';
+
 function App() {
+  const user = ""
   return (
     <div className="App">
-    <NavBar/>
-    <Banner/>
-    <RowPost  url={originals} title="Netflix Orginals"/>
-    <RowPost url={action} title="Action" isSmall/>
-    <RowPost url={comedy} title="Comedy" isSmall/>
+      <Router>
+        
+      <Route exact path='/'>
+         <Login/>
+        </Route>
+        <Route exact path='/home'>
+         <Homescreen/>
+        </Route>
+      
+      
+        
+      </Router>
+      
     </div>
   )
 }

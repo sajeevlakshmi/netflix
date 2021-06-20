@@ -1,9 +1,13 @@
+body{
+   overflow-x: hidden;
+   
+}
 .navbar{
     position: fixed;
     top:0;
     width: 100%;
     height:30px ;
-    padding: 20px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     background-color:transparent;
@@ -15,11 +19,52 @@ background-color: #111;
 
 .logo{
     position: fixed;
-    left:20px;
-    width:80px;
+    margin-left: 20px;
+    width:100px;
 }
 .avatar{
     position: fixed;
     right:20px;
     width: 30px;
+}
+
+ 
+.main-menu{
+    background-color: rgba(51, 51, 51, .6);   
+     width: 29px;
+    height: 100vh;
+
+    position: fixed;
+    top:0;
+    left:0;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+    transition: .3s ease;
+}
+
+.main-menu:hover{
+    background-color: rgba(51, 51, 51,.6);
+    width : 200px;
+    /* overflow-y: scroll; */
+}
+.main-menu-list{
+    padding-top: 180px;
+}
+
+.main-menu .menu-item a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+.main-menu ul li{
+    margin-bottom: 1.25rem;
+}
+
+.main-menu .menu-item:hover{
+    background-color:grey;
+    cursor: pointer;
 }
