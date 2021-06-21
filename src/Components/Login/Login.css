@@ -90,8 +90,9 @@
 }
 @media only screen and (max-width: 400px){
     .loginScreen-body{
-        margin-top: 150px;
+      
         width: 75%;
+        scroll-behavior: auto;
     }
     .card-title{
         font-size: 2.125rem;
@@ -101,6 +102,10 @@
     }
     .loginScreen-getStarted{
         margin-top: 20px;
+    }
+    .loginScreen-input form input{
+        width: 100%;
+        text-align: center;
     }
 
 }
