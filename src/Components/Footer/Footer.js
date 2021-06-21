@@ -40,7 +40,7 @@ function Footer() {
                 </ul>
             </div>
             </div>
-            <div className="footer-row-3">Copyright@LakshmiPriya</div>
+            <div className="footer-row-3">Copyright@LakshmiPriya.2021</div>
             </div>  
         </div>
         

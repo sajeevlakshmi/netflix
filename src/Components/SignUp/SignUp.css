@@ -49,3 +49,16 @@ font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     font-weight: 600;
 }
+@media only screen and (max-width: 400px){
+    .signUp-screen{
+        padding:30px;
+        width:100%
+    }
+    .signUp-screen > form >input{
+        width: 100%;
+    }
+    .signUp-screen > form >button{
+        width: 100%;
+    }
+
+}

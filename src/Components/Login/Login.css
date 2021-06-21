@@ -88,3 +88,19 @@
     border: none;
     font-size: 1rem;
 }
+@media only screen and (max-width: 400px){
+    .loginScreen-body{
+        margin-top: 150px;
+        width: 75%;
+    }
+    .card-title{
+        font-size: 2.125rem;
+    }
+    .card-subtitle{
+        font-size: 1rem; 
+    }
+    .loginScreen-getStarted{
+        margin-top: 20px;
+    }
+
+}
