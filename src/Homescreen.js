@@ -5,7 +5,7 @@ import './App.css';
 import {originals,action,comedy,trending,romance,horror,documentaries} from './urls'
 import Banner from './Components/Banner/Banner'
 import RowPost from './Components/RowPost/RowPost'
-import Footer from './Components/Footer/Footer'
+// import Footer from './Components/Footer/Footer'
 const Homescreen = () => {
     return (
         <div className="App">
@@ -19,7 +19,7 @@ const Homescreen = () => {
     <RowPost url={romance} title="Romance Movies" isSmall/>
     <RowPost url={documentaries} title="Documentries" isSmall/>
     
-    <Footer/>
+    
         </div>
     )
 }

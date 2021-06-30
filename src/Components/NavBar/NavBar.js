@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { auth } from '../../Firebase/Config';
 import "./NavBar.css";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import LocalMoviesIcon from '@material-ui/icons/LocalMovies';
 
 function NavBar() {
- 
+  const history = useHistory()
   const [nav, setNav] = useState(false);
   const changeNavBackground = () => {
     if (window.scrollY >= 80) {
@@ -68,9 +70,12 @@ function NavBar() {
             &nbsp;Gift</a>
           </li>
           <li class="menu-item">
-          <a href="/">
+          <a href="/" onClick={()=>{
+          auth.auth().signOut()
+          history.push('/login')
+        }}>
             <AiIcons.AiOutlineLogin/>
-            &nbsp;Login</a>
+            &nbsp;LogOut</a>
           </li>
           
         </ul>
